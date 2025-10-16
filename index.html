@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sabil's Portfolio</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      AOS.init({
+        duration: 1000,
+        once: true,
+        offset: 100,
+      });
+    });
+  </script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="antialiased font-[Inter] bg-butter text-dark">
+
+  <!-- Header -->
+  <header class="fixed w-full bg-butter/80 backdrop-blur-md shadow z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="#" class="text-2xl font-extrabold text-sky">MyProfile</a>
+      <div class="hidden md:flex items-center space-x-8">
+        <a href="#about" class="nav-link">Tentang</a>
+        <a href="#resume" class="nav-link">Resume</a>
+        <a href="#skills" class="nav-link">Keahlian</a>
+        <a href="#contact" class="btn-primary">Get in Touch</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section relative min-h-screen flex items-center animated-gradient">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center px-6">
+      <!-- Text -->
+      <div class="text-left space-y-6" data-aos="fade-right">
+        <h1 class="text-5xl md:text-6xl font-extrabold leading-tight">
+          Halo, Saya <span class="text-sky">Andi Tsarwah Salsabilah</span> 👋
+        </h1>
+        <p class="text-dark/80 text-lg max-w-md" data-aos="fade-up" data-aos-delay="200">
+          Mahasiswa Teknologi Industri Pertanian dengan passion di teknologi, kreativitas, dan inovasi digital. 
+          Saya suka menggabungkan logika + imajinasi untuk menciptakan karya yang impactful.
+        </p>
+        <a href="#contact" class="btn-primary" data-aos="zoom-in" data-aos-delay="400">Hubungi Saya</a>
+      </div>
+
+      <!-- Foto Profil (Capybara Sabil) -->
+      <div class="flex justify-center relative" data-aos="zoom-in-left">
+        <div class="profile-img border-8 border-sky w-72 h-72">
+          <img src="me.jpg" alt="Foto Profil" class="w-full h-full object-cover">
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll -->
+    <a href="#about" class="scroll-down">Scroll ↓</a>
+  </section>
+
+  <!-- Tentang Saya -->
+  <section id="about" class="py-24 bg-butter">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center px-6">
+      <div data-aos="fade-right">
+        <h2 class="text-5xl font-extrabold text-sky mb-6">Tentang Saya</h2>
+        <p class="text-dark leading-relaxed mb-6">
+          Saya percaya setiap ide bisa diwujudkan menjadi karya nyata dengan sentuhan teknologi. 
+          Saya suka membangun desain dan konten visual yang estetis sekaligus fungsional.
+        </p>
+        <a href="#contact" class="btn-secondary" data-aos="zoom-in" data-aos-delay="200">Ayo Berkolaborasi</a>
+      </div>
+      <div class="grid grid-cols-2 gap-6">
+        <div class="card-info" data-aos="fade-up" data-aos-delay="100"><h3 class="font-bold text-lg">📍 Lokasi</h3><p>Makassar</p></div>
+        <div class="card-info" data-aos="fade-up" data-aos-delay="200"><h3 class="font-bold text-lg">📧 Email</h3><p>tsarwahsalsabilah@gmail.com</p></div>
+        <div class="card-info" data-aos="fade-up" data-aos-delay="300"><h3 class="font-bold text-lg">📱 Instagram</h3><p>@srwabila.a</p></div>
+        <div class="card-info" data-aos="fade-up" data-aos-delay="400"><h3 class="font-bold text-lg">🎯 Fokus</h3><p>Teknologi Industri Pertanian</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resume -->
+  <section id="resume" class="py-24 bg-gradient-to-b from-white to-butter">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 px-6">
+      <!-- Pendidikan -->
+      <div data-aos="fade-right">
+        <h2 class="text-4xl font-extrabold text-sky mb-12">🎓 Pendidikan</h2>
+        <div class="timeline">
+          <div class="timeline-item" data-aos="fade-up"><span>2012–2013</span> TK PERTIWI</div>
+          <div class="timeline-item" data-aos="fade-up" data-aos-delay="100"><span>2013–2019</span> SD NEGERI 9 SITAMPAE</div>
+          <div class="timeline-item" data-aos="fade-up" data-aos-delay="200"><span>2019–2022</span> SMP NEGERI 6 SENGKANG</div>
+          <div class="timeline-item" data-aos="fade-up" data-aos-delay="300"><span>2022–2025</span> SMA NEGERI 7 WAJO</div>
+          <div class="timeline-item" data-aos="fade-up" data-aos-delay="400"><span>2025–Sekarang</span> UNIVERSITAS HASANUDDIN</div>
+        </div>
+      </div>
+      <!-- Minat & Visi -->
+      <div data-aos="fade-left">
+        <h2 class="text-4xl font-extrabold text-sky mb-12">🌟 Minat & Visi</h2>
+        <div class="space-y-6">
+          <div class="card-info" data-aos="zoom-in" data-aos-delay="100">
+            <h3 class="font-bold text-lg">🎵 Hobi</h3>
+            <p class="opacity-80">
+              Di sela aktivitas, saya menikmati musik, menggambar, dan tenggelam dalam dunia novel 
+              untuk mengisi energi kreatif.
+            </p>
+          </div>
+          <div class="card-info" data-aos="zoom-in" data-aos-delay="200">
+            <h3 class="font-bold text-lg">🚀 Cita-cita</h3>
+            <p class="opacity-80">
+              Bercita-cita menjadi Supply Chain Manager, saya ingin menyusun alur produksi dan distribusi 
+              seperti “orkestra” yang efisien, berkelanjutan, dan berdampak positif bagi dunia agribisnis.
+            </p>
+          </div>
+          <div class="card-info" data-aos="zoom-in" data-aos-delay="300">
+            <h3 class="font-bold text-lg">🔬 Riset</h3>
+            <p class="opacity-80">
+              Riset saya bertujuan menyempurnakan rantai pasok pertanian melalui inovasi dan teknologi, 
+              menciptakan alur produksi dan distribusi yang adaptif, efisien, dan berkelanjutan.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="py-24">
+    <h2 class="text-5xl font-extrabold text-center text-sky mb-12" data-aos="fade-down">💡 Keahlian</h2>
+    <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 px-6">
+      <div class="skill-card" data-aos="flip-left" data-aos-delay="100">🎨 Desain UI/UX</div>
+      <div class="skill-card" data-aos="flip-left" data-aos-delay="200">💬 Komunikasi Kreatif
+</div>
+      <div class="skill-card" data-aos="flip-left" data-aos-delay="300">⚡ Menulis</div>
+      <div class="skill-card" data-aos="flip-left" data-aos-delay="400">🌐 Fotografer</div>
+      <div class="skill-card" data-aos="flip-left" data-aos-delay="500">✨ Kreativitas Digital</div>
+      <div class="skill-card" data-aos="flip-left" data-aos-delay="600">📊 Analisis Data</div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact" class="bg-sky text-dark py-8 text-center" data-aos="fade-up">
+    <p class="mb-4">&copy; 2025 Sabil | Dibuat dengan 💡 teknologi & kreativitas</p>
+    <div class="flex justify-center space-x-6">
+      <a href="mailto:tsarwahsalsabilah@gmail.com" class="hover:text-dark/70">📧 Email</a>
+      <a href="https://instagram.com/srwabila.a" class="hover:text-dark/70">📱 Instagram</a>
+    </div>
+  </footer>
+</body>
+</html>
